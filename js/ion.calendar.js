@@ -42,8 +42,6 @@
                 }
                 $calendar.data("isActive", true);
 
-
-
                 var $prev,
                     $next,
                     $month,
@@ -293,6 +291,8 @@
                     if(settings.clickable) {
                         $day.on("click", function(e){
                             e.preventDefault();
+                            $(this).toggleClass('active');
+                            /*
                             var toDay = $(this).text();
                             timeNowLocal.date(parseInt(toDay));
                             timeSelected = moment(timeNowLocal);
@@ -316,6 +316,7 @@
                             }
 
                             removeHTML();
+                            */
                         });
                     }
 
@@ -364,6 +365,7 @@
             $.error('Method ' + method + ' does not exist for jQuery.ionCalendar');
         }
     };
+
 })(jQuery);
 
 
