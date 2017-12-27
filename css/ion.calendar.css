@@ -37,7 +37,9 @@
         border-collapse: collapse !important;
         border-spacing: 0 !important;
     }
-
+#calendar {
+    width: 274px;
+}
 
 .ic__header {
     position: relative;
@@ -122,18 +124,11 @@
 .ic__days .ic__day-empty {
     background: #fff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAMAAAC6sdbXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF7u7u////KNOqmgAAABlJREFUeNpiYGRkZABCCGIA8UAEI4QACDAAAUoAFV5+ydgAAAAASUVORK5CYII=');
 }
-.ic__days .ic__day_state_current {
-    background: #f4f4f4;
-    color: #000;
-}
-.ic__days .ic__day_state_selected {
-    background: #f4f4f4;
-    color: #000;
-}
 
 
 select {
     color: #797878;
+    -webkit-appearance: none;
 }
 .ic__datepicker {
     position: absolute;
