@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../css/ion.calendar.css" />
+		<script src="./../js/jquery.min.js"></script>
+		<script src="./../js/moment-with-locales.min.js"></script>
+		<script src="./../js/ion.calendar.js"></script>
+		<style>
+			#calendar {
+				width: 274px;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="width: 1000px; margin: 0 auto;">
+			<div style="margin-top: 200px;">
+				<div id="calendar"></div>
+
+				<script type="text/javascript">
+					$("#calendar").ionCalendar({
+						lang: "ru",
+						sundayFirst: false,
+						years: "2016-2020",
+						format: "DD.MM.YYYY"
+					});
+				</script>
+
+			</div>
+		</div>
+	</body>
+</html>
